@@ -14,6 +14,9 @@ import {
 	, CreateSessionComponent
 	, SessionListComponent
 	, DurationPipe
+	, UpvoteComponent
+	, VoterService
+	, LocationValidator
 } from './events/index';
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component';
@@ -53,12 +56,15 @@ declare let jQuery: Object;
 		, DurationPipe
 		, SimpleModalComponent
 		, ModalTriggerDirective
+		, UpvoteComponent
+		, LocationValidator
 	]
 	, providers: [
 		EventService
 		, EventRouteActivator
 		, EventListResolver
 		, AuthService
+		, VoterService
 		, { provide: 'canDeactivateCreateEvent', useValue: checkDirtyState }
 		, { provide: TOASTR_TOKEN, useValue: toastr }
 		, { provide: JQ_TOKEN, useValue: jQuery }

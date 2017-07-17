@@ -72,7 +72,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Chrome'],   // use the command "export CHROME_BIN=/usr/bin/chromium" to get linux to see Chromium as chrome... works temporarily
     singleRun: false,
     concurrency: Infinity
   })

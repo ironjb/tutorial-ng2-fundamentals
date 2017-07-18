@@ -1,5 +1,5 @@
 import { VoterService } from './voter.service';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 import { ISession } from '../shared/event.model';
 
 describe('VoterService', () => {

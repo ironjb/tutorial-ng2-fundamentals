@@ -1,3 +1,4 @@
+import '../../rxjs-extensions';
 import { VoterService } from './voter.service';
 import { Observable } from 'rxjs/Observable';
 import { ISession } from '../shared/event.model';
